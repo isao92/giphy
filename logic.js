@@ -11,7 +11,7 @@ $(document).on("click", "button", function () {
 
   // Constructing a queryURL using the music name
   var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-    music + "&api_key=dc6zaTOxFJmzC&limit=10";
+    music + "&api_key=VyCPkrTDB92IWuJWrpCk7pSielFlATAp&limit=10";
 
   // Performing an AJAX request with the queryURL
   $.ajax({
@@ -30,7 +30,7 @@ $(document).on("click", "button", function () {
       for (var i = 0; i < results.length; i++) {
 
         // Creating and storing a div tag
-        var musicDiv = $("<div>");
+        var musicDiv = $("<p>");
 
         // Creating a paragraph tag with the result item's rating
         var p = $("<p>").text("Rating: " + results[i].rating);
